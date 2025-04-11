@@ -5,21 +5,21 @@
 class Echoy < Formula
   desc "Echoy - intelligent & smart AI assistance for your daily life"
   homepage "https://github.com/shaharia-lab/echoy"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.7/echoy_0.0.7_darwin_amd64.tar.gz"
-      sha256 "2be7e67b7adc30e6f9a0cb9089f232a11ceaee6cfa3f0274d47e641c0f3b345a"
+      url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.8/echoy_0.0.8_darwin_amd64.tar.gz"
+      sha256 "2bf8fb3b0b514c60fa245725e0c5322ce805a18e4a563e69e2d36f5f93befdea"
 
       def install
         bin.install "echoy"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.7/echoy_0.0.7_darwin_arm64.tar.gz"
-      sha256 "856d4d69f3942f6874e5c9320fc768a10dc0e937ae45c8423e55af8f12f2f45c"
+      url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.8/echoy_0.0.8_darwin_arm64.tar.gz"
+      sha256 "06f8e85795dd1d14998accfd94d0493061d0f6f284ffae24190253ac153aa581"
 
       def install
         bin.install "echoy"
@@ -30,8 +30,8 @@ class Echoy < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.7/echoy_0.0.7_linux_amd64.tar.gz"
-        sha256 "7e11e673f81339e68dcd9f5992e59feefd0e4d8e6c7690cafa3fd41e3ec3fdff"
+        url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.8/echoy_0.0.8_linux_amd64.tar.gz"
+        sha256 "e07fffc94b1da6f94f447c9ea88e641f3ad8f7633a362ba56fd38651aebc14ef"
 
         def install
           bin.install "echoy"
@@ -40,8 +40,8 @@ class Echoy < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.7/echoy_0.0.7_linux_arm64.tar.gz"
-        sha256 "9e8e99496746290e611e7cb4c1a21288183139904262673b2c981df060796f1b"
+        url "https://github.com/shaharia-lab/echoy/releases/download/v0.0.8/echoy_0.0.8_linux_arm64.tar.gz"
+        sha256 "85e29407eaf9793a2d3e449800be9db778d9000bec51b784877b795a1cc920f2"
 
         def install
           bin.install "echoy"
