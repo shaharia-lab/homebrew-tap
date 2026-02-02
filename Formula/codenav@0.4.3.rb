@@ -20,11 +20,16 @@ class CodenavAT043 < Formula
     end
   end
 
+  on_linux do
+    url "https://github.com/shaharia-lab/code-navigator/releases/download/v0.4.3/codenav-linux-x86_64.tar.gz"
+    sha256 "ead63cefd384aebeb7ff70718d3eb7a334c4b06ad1958d96d263250b0b9a848e"
+  end
+
   def install
     bin.install "codenav"
   end
 
   test do
-    system "\#{bin}/codenav", "--version"
+    system "#{bin}/codenav", "--version"
   end
 end
