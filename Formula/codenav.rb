@@ -4,13 +4,13 @@
 class Codenav < Formula
   desc "Code Navigator - AI-powered codebase exploration and understanding tool"
   homepage "https://github.com/shaharia-lab/code-navigator"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/code-navigator/releases/download/v#{version}/codenav-macos-x86_64.tar.gz"
-      sha256 "1c6d4a3a2f4bc8883682729094156e32a94d81691a7e1b4b5d283d5d704ebf86"
+      url "https://github.com/shaharia-lab/code-navigator/archive/refs/tags/v0.4.2.tar.gz"
+      sha256 "3ac1ee8d97c9fca182abc8c64abdeb3920edd0d307c99c8ced0e168f75df082a"
     end
     if Hardware::CPU.arm?
       url "https://github.com/shaharia-lab/code-navigator/releases/download/v#{version}/codenav-macos-aarch64.tar.gz"
