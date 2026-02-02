@@ -9,12 +9,12 @@ class Codenav < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/code-navigator/archive/refs/tags/v0.4.2.tar.gz"
-      sha256 "3ac1ee8d97c9fca182abc8c64abdeb3920edd0d307c99c8ced0e168f75df082a"
+      url "https://github.com/shaharia-lab/code-navigator/releases/download/v0.4.2/codenav-macos-x86_64.tar.gz"
+      sha256 "9d1e2d89eccc4cc539d8ba2a79223c4114770da8197ac7718396493ec26a616f"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/code-navigator/releases/download/v#{version}/codenav-macos-aarch64.tar.gz"
-      sha256 "f1a87a34ccf813198ae6b91850c59c885039c990ca757ae5f6e0ca840f697c62"
+      url "https://github.com/shaharia-lab/code-navigator/releases/download/v0.4.2/codenav-macos-aarch64.tar.gz"
+      sha256 "39a189affeac9f34cfbbd4840030862a56903d3ebb7dc8a98157174b5da7655f"
     end
   end
 
