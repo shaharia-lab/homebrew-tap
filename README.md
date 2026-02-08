@@ -12,6 +12,7 @@ brew tap shaharia-lab/tap
 brew install codenav
 brew install gscli
 brew install slackcli
+brew install vibexp
 ```
 
 ## Available Formulas
@@ -22,6 +23,7 @@ brew install slackcli
 | `gscli` | Google Suite CLI - Access Gmail, Drive, and Calendar from command line | [gscli](https://github.com/shaharia-lab/gscli) |
 | `slackcli` | Slack CLI - Interact with Slack from command line | [slackcli](https://github.com/shaharia-lab/slackcli) |
 | `echoy` | Intelligent & smart AI assistance for your daily life | [echoy](https://github.com/shaharia-lab/echoy) |
+| `vibexp` | VibeXP CLI - Command line interface for the VibeXP platform | [vibexp.io](https://github.com/shaharia-lab/vibexp.io) |
 
 ## Installation Methods
 
@@ -35,6 +37,7 @@ brew tap shaharia-lab/tap
 brew install codenav
 brew install gscli
 brew install slackcli
+brew install vibexp
 ```
 
 ### Alternative: Direct install (no tap setup needed)
@@ -44,6 +47,7 @@ brew install slackcli
 brew install shaharia-lab/tap/codenav
 brew install shaharia-lab/tap/gscli
 brew install shaharia-lab/tap/slackcli
+brew install shaharia-lab/tap/vibexp
 ```
 
 ## Platform Support
