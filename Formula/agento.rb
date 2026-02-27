@@ -5,21 +5,21 @@
 class Agento < Formula
   desc "Agento — AI Agents Platform"
   homepage "https://github.com/shaharia-lab/agento"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/agento/releases/download/v0.1.0/agento_Darwin_x86_64.tar.gz"
-      sha256 "bc39cc5d4481b43117ea06ce0f6af7cbebb210a697ade96d5b93248c34f9ef1f"
+      url "https://github.com/shaharia-lab/agento/releases/download/v0.2.0/agento_Darwin_x86_64.tar.gz"
+      sha256 "b1e7b61946be91623f33aa549bc0161f2826a0140796ceaa1cd1ef2d371693ba"
 
       define_method(:install) do
         bin.install "agento"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/agento/releases/download/v0.1.0/agento_Darwin_arm64.tar.gz"
-      sha256 "eac8c317230422d2d240eeef220ba029187923e4c0f31f8f304b21e9202b3f22"
+      url "https://github.com/shaharia-lab/agento/releases/download/v0.2.0/agento_Darwin_arm64.tar.gz"
+      sha256 "40174101e4df4ded0598231d37356071552b13c618c1363130519aadfc0a3aa5"
 
       define_method(:install) do
         bin.install "agento"
@@ -29,15 +29,15 @@ class Agento < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaharia-lab/agento/releases/download/v0.1.0/agento_Linux_x86_64.tar.gz"
-      sha256 "758779ed665c42e9780d728f6f4cf5f2895e4458f1c500fe638c7c78535979e0"
+      url "https://github.com/shaharia-lab/agento/releases/download/v0.2.0/agento_Linux_x86_64.tar.gz"
+      sha256 "557a3e0d467ff39be5cfc536af053c8b290f46ab04143c8fca0c905269a03ca7"
       define_method(:install) do
         bin.install "agento"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaharia-lab/agento/releases/download/v0.1.0/agento_Linux_arm64.tar.gz"
-      sha256 "de0e0043b0f6ea5f30f8ff3fc109fcc51320226ba28b1f0a448a25947d15902a"
+      url "https://github.com/shaharia-lab/agento/releases/download/v0.2.0/agento_Linux_arm64.tar.gz"
+      sha256 "f7e76ac500611b1ca41f7e8c404a6541438492d3ec5afede8ab01c9c79942374"
       define_method(:install) do
         bin.install "agento"
       end
