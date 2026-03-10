@@ -4,21 +4,21 @@
 class Slackcli < Formula
   desc "Slack CLI - Interact with Slack from command line"
   homepage "https://github.com/shaharia-lab/slackcli"
-  version "0.2.4"
+  version "0.2.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.4/slackcli-macos"
-      sha256 "e7e0ba0ad193e08d45b0dda6dc94adad7d26409b61e027c8b12cd903c612e7aa"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.5/slackcli-macos"
+      sha256 "a55d596f9eed947ee3f4be8fa405dade76fbd390f89571a632c589fd35142520"
 
       def install
         bin.install "slackcli-macos" => "slackcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.4/slackcli-macos-arm64"
-      sha256 "e11aed374db83de11196c602087aab6c720b841f957eea1af3493b0f8fc06cf5"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.5/slackcli-macos-arm64"
+      sha256 "8d05a185abd7cfb4466335d1958f93ad726bc79daa3b61add911680b9010e19b"
 
       def install
         bin.install "slackcli-macos-arm64" => "slackcli"
@@ -27,8 +27,8 @@ class Slackcli < Formula
   end
 
   on_linux do
-    url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.4/slackcli-linux"
-    sha256 "00e9bec4ac3d1652064043a5567e4cbef293c20eb5c9e608f8788bbd681d0f60"
+    url "https://github.com/shaharia-lab/slackcli/releases/download/v0.2.5/slackcli-linux"
+    sha256 "85b22dc30d2fc19c0b4b04c5bfa8d1976a4ea619672730039f6a83cb207effad"
 
     def install
       bin.install "slackcli-linux" => "slackcli"
