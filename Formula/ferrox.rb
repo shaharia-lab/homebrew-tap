@@ -10,14 +10,14 @@ class Ferrox < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/shaharia-lab/ferrox/releases/download/v0.1.0/ferrox-x86_64-apple-darwin.tar.gz"
-      sha256 "1f68f2b2e594db62028cf230025335ecc57aaf3e75cc939005adc4d2d42801d7"
+      sha256 "9cbdc4714620b0e92dbbe98aedd1ca8ca0319472af54fd99d078180a531232ce"
       def install
         bin.install "ferrox"
       end
     end
     if Hardware::CPU.arm?
       url "https://github.com/shaharia-lab/ferrox/releases/download/v0.1.0/ferrox-aarch64-apple-darwin.tar.gz"
-      sha256 "505e7746d7aae106c677a6eb67404c492541cc64aa8e3477777945cc1b4a602c"
+      sha256 "b5d38fade0ee3423f741e992c811fe41422f459761e623d984e05b2d41aed984"
       def install
         bin.install "ferrox"
       end
@@ -27,14 +27,14 @@ class Ferrox < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/shaharia-lab/ferrox/releases/download/v0.1.0/ferrox-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "18c328582867ff86beb64be2797ec3d9d390d1e4269610b8565d2382378a0036"
+      sha256 "0dbd0b00254e8c67ef1d0a543c338720d97983d31b178d77862c4726ef7572f6"
       def install
         bin.install "ferrox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/shaharia-lab/ferrox/releases/download/v0.1.0/ferrox-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "fd17fa1fc184d1411eaaccaff008db3051a7610073cece6f28992e0e984bcdc9"
+      sha256 "1791ce94c64e18c96528dc20de27f9de2fba069baa2d476518c69be9bb65643b"
       def install
         bin.install "ferrox"
       end
