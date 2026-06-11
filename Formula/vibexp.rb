@@ -4,31 +4,31 @@
 class Vibexp < Formula
   desc "VibeXP CLI - Command line interface for the VibeXP platform"
   homepage "https://github.com/shaharia-lab/vibexp.io"
-  version "0.3.2"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.3.2-vibexp-darwin-x64"
-      sha256 "23e4c28aee2fdb5d83ef2e620794c8488464001fd55e68979657fb14e3287f21"
+      url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.4.0-vibexp-darwin-x64"
+      sha256 "<?xml"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.3.2-vibexp-darwin-arm64"
-      sha256 "825f0987962ff57d744d5d10a3b28be3c072e9645be00607dd37f8f78cbe0f08"
+      url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.4.0-vibexp-darwin-arm64"
+      sha256 "<?xml"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.3.2-vibexp-linux-x64"
-        sha256 "255a70899b71422f30df69d48965314abdf3d9747d0ba033315a9aad9029da35"
+        url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.4.0-vibexp-linux-x64"
+        sha256 "<?xml"
       end
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.3.2-vibexp-linux-arm64"
-        sha256 "dcb8e22d881552f147ba5d6a875e7c79ecd8c2b3020960357f56bfe83262d62f"
+        url "https://storage.googleapis.com/shaharialab-public-shared/vibexp-release/v0.4.0-vibexp-linux-arm64"
+        sha256 "<?xml"
       end
     end
   end
@@ -45,6 +45,6 @@ class Vibexp < Formula
   end
 
   test do
-    system "#{bin}/vibexp", "--version"
+    system "\#{bin}/vibexp", "--version"
   end
 end
