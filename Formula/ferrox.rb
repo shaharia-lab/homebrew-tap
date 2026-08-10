@@ -4,20 +4,20 @@
 class Ferrox < Formula
   desc "High-performance, stateless LLM API gateway"
   homepage "https://github.com/shaharia-lab/ferrox"
-  version "0.6.1"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.6.1/ferrox-x86_64-apple-darwin.tar.gz"
-      sha256 "4c71940f529d98acd031ad10522e0811507511c7d97242632465f79abcd188aa"
+      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.7.0/ferrox-x86_64-apple-darwin.tar.gz"
+      sha256 "aef4d2860951fd9e1618b5729fe8a4058bf09793d3f2e0910ef56ccdb640b115"
       def install
         bin.install "ferrox"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.6.1/ferrox-aarch64-apple-darwin.tar.gz"
-      sha256 "692deff638256d5b69bf8ec196dffd89b7f3de263da3a6d69058302bebe562d0"
+      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.7.0/ferrox-aarch64-apple-darwin.tar.gz"
+      sha256 "befd63b20c5b025f453b4939da3cc227d9634c5c25e4bba36cc0f9c120cdd0c4"
       def install
         bin.install "ferrox"
       end
@@ -26,15 +26,15 @@ class Ferrox < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.6.1/ferrox-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "61650770f4475c89063a144c1e111d63772724839aceb2d69447924bbb860985"
+      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.7.0/ferrox-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "9cd8295350ffaa0faea3bb432da3ce177ad1e3c654a7b982567368468c738db3"
       def install
         bin.install "ferrox"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.6.1/ferrox-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "51b3c4a8157ce843b5ea1fbec67c2a4be10579037644814857b5a2c1973572be"
+      url "https://github.com/shaharia-lab/ferrox/releases/download/v0.7.0/ferrox-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "1067fec98400d3323aa0e5ff443f7443ea8f3f5645c5a0281130d4c1bd53937c"
       def install
         bin.install "ferrox"
       end
