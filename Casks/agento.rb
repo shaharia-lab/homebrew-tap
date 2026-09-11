@@ -4,14 +4,12 @@ cask "agento" do
   on_arm do
     sha256 "78e55a3ef63d2116949234d7ca64176a9a03ffffe2653abe00f95d724ad2c8ac"
 
-    url "https://github.com/shaharia-lab/agento/releases/download/desktop-v#{version}/Agento_#{version}_aarch64.dmg",
-        verified: "github.com/shaharia-lab/agento/"
+    url "https://github.com/shaharia-lab/agento/releases/download/desktop-v#{version}/Agento_#{version}_aarch64.dmg"
   end
   on_intel do
     sha256 "6ca3250a5baaeeac06278fc0afd689a8b845704f0a713fba5cc30cb6c1442326"
 
-    url "https://github.com/shaharia-lab/agento/releases/download/desktop-v#{version}/Agento_#{version}_x64.dmg",
-        verified: "github.com/shaharia-lab/agento/"
+    url "https://github.com/shaharia-lab/agento/releases/download/desktop-v#{version}/Agento_#{version}_x64.dmg"
   end
 
   name "Agento"
@@ -30,7 +28,7 @@ cask "agento" do
   # The formula in this tap installs the retiring Go/web build, which is a
   # different program that happens to share a name. Both can be installed at
   # once, so this is deliberately not a `conflicts_with`.
-  depends_on macos: ">= :big_sur"
+  depends_on macos: :big_sur
 
   app "Agento.app"
 
