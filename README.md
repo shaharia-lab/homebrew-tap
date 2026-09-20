@@ -24,6 +24,7 @@ brew install vibexp
 | `slackcli` | Slack CLI - Interact with Slack from command line | [slackcli](https://github.com/shaharia-lab/slackcli) |
 | `echoy` | Intelligent & smart AI assistance for your daily life | [echoy](https://github.com/shaharia-lab/echoy) |
 | `vibexp` | VibeXP CLI - Command line interface for the VibeXP platform | [vibexp.io](https://github.com/shaharia-lab/vibexp.io) |
+| `jev` | Unofficial CLI for TypeSafe AI's Jev model, for humans, scripts and AI agents | [jev-cli](https://github.com/shaharia-lab/jev-cli) |
 
 ## Installation Methods
 
