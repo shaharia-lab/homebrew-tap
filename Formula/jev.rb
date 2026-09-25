@@ -9,23 +9,23 @@ class Jev < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.1.1/jev-0.1.1-aarch64-apple-darwin.tar.gz"
-      sha256 "dcc135bfd1403a8cd367a651a4e4a89618937f66af5d41eb24b353160cba2451"
+      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.2.0/jev-0.2.0-aarch64-apple-darwin.tar.gz"
+      sha256 "9c1eb724e896ae01c857370bd1c0c11fea54af6c8e694ff266c27fb5b35dcc2e"
     end
     on_intel do
-      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.1.1/jev-0.1.1-x86_64-apple-darwin.tar.gz"
-      sha256 "f31c7df848c2d09a505fdd5008d49d8eab637209bf7f4e28882df8f6733dcaa8"
+      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.2.0/jev-0.2.0-x86_64-apple-darwin.tar.gz"
+      sha256 "d122d700d28d8fe227eb19bd85856870fa41aa68ce2ff62b608a492d872f3bf5"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.1.1/jev-0.1.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "12bd15a6805f92ac25f3396e6d5419afd05778be9856f273039be479b52709ae"
+      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.2.0/jev-0.2.0-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "5fbda3609fb637f93fab9e8ca5edd5c1b7be6e4b3938f6f5372bfbb00b4ce41e"
     end
     on_intel do
-      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.1.1/jev-0.1.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "94fb6577e771d589991af6d140fdbb7009c090e69bcab92e644e8efbd36c0032"
+      url "https://github.com/shaharia-lab/jev-cli/releases/download/v0.2.0/jev-0.2.0-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "877157b9481bcc2fa622688592fdaa8cf33b94e3ea08ef73c665f61d41880123"
     end
   end
 
