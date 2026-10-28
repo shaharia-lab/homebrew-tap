@@ -4,21 +4,21 @@
 class Slackcli < Formula
   desc "Slack CLI - Interact with Slack from command line"
   homepage "https://github.com/shaharia-lab/slackcli"
-  version "0.17.0"
+  version "0.18.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.17.0/slackcli-macos"
-      sha256 "42d4226f6ff9851e8e54021e6e011f939170c9b549196834bbdbcc369ecea6c8"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.18.0/slackcli-macos"
+      sha256 "1c8d7d7bd8678ed12320403d6d321e350769edc067a2c78155d9fe180781dba6"
 
       def install
         bin.install "slackcli-macos" => "slackcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.17.0/slackcli-macos-arm64"
-      sha256 "0397f6cff6a91bf3923b08169297c3e8bd6353a517de0ba7331ec9db0044e98e"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.18.0/slackcli-macos-arm64"
+      sha256 "f310d41c8bf568af78c787686d0215941c31010863a39ad4270faaf7100bfe06"
 
       def install
         bin.install "slackcli-macos-arm64" => "slackcli"
@@ -28,16 +28,16 @@ class Slackcli < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.17.0/slackcli-linux"
-      sha256 "5b26d31cc9cea5b55c377d0f9c32039904ee4bc8083e8cc670c1b07011784600"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.18.0/slackcli-linux"
+      sha256 "3dbcbef9d233a5962efcf5a98e4be62569e983289ad45a64355680bdab6c76d3"
 
       def install
         bin.install "slackcli-linux" => "slackcli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.17.0/slackcli-linux-arm64"
-      sha256 "17a48801cd4d2ad667dc96242bbf13af2d8f5c6766841a19b905ce3547957eb8"
+      url "https://github.com/shaharia-lab/slackcli/releases/download/v0.18.0/slackcli-linux-arm64"
+      sha256 "393c16d8ba927c0731ebe2ddee4a5e61c4bddf146cf581f09a8a721572774f74"
 
       def install
         bin.install "slackcli-linux-arm64" => "slackcli"
